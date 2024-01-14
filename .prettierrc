@@ -1,0 +1,52 @@
+{
+	"arrowParens": "avoid",
+	"bracketSameLine": false,
+	"bracketSpacing": true,
+	"embeddedLanguageFormatting": "auto",
+	"endOfLine": "lf",
+	"htmlWhitespaceSensitivity": "css",
+	"insertPragma": false,
+	"jsxSingleQuote": false,
+	"printWidth": 100,
+	"proseWrap": "always",
+	"quoteProps": "as-needed",
+	"requirePragma": false,
+	"semi": false,
+	"singleAttributePerLine": false,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"trailingComma": "all",
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": ["**/*.json"],
+			"options": {
+				"useTabs": false
+			}
+		}
+	],
+	"importOrder": [
+		"^(react/(.*)$)|^(react$)",
+		"^(next/(.*)$)|^(next$)",
+		"<THIRD_PARTY_MODULES>",
+		"",
+		"<TYPES>",
+		"",
+		"^@/types/(.*)$",
+		"^@/config/(.*)$",
+		"^@/stores$",
+		"^@/stores/(.*)$",
+		"^@/services$",
+		"^@/services/(.*)$",
+		"^@/lib/(.*)$",
+		"^@/hooks/(.*)$",
+		"^@/components/ui/(.*)$",
+		"^@/components/(.*)$",
+		"^@/styles/(.*)$",
+		"^@/app/(.*)$",
+		"",
+		"^[.]"
+	],
+	"importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+	"plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"]
+}
